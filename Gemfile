@@ -23,6 +23,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'paperclip', "~> 4.2"
 gem 'aws-sdk', '~>1.6'
+gem 'devise', '~> 3.5', '>= 3.5.2'
 
 
 
@@ -30,7 +31,6 @@ group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'sqlite3'
-  gem 'spring'
 end
 group :production do
   gem 'pg', '~> 0.18.3'
