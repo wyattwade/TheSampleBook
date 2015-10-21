@@ -176,7 +176,7 @@ DEPENDENCIES
   aws-sdk (~> 1.6)
   byebug
   coffee-rails (~> 4.1.0)
-  devise (~> 3.5, >= 3.5.2)
+  devise
   jbuilder (~> 2.0)
   jquery-rails
   paperclip (~> 4.2)
