@@ -93,7 +93,7 @@ config.paperclip_defaults = {
 
 
 #devise
-config.action_mailer.default_url_options = { :host => 'https://letsdothiss.herokuapp.com/' }
+config.action_mailer.default_url_options = { :host => 'letsdothiss.herokuapp.com' }
 
 
 
