@@ -14,7 +14,7 @@
   <tbody>
     <% @pictures.each do |picture| %>
       <tr>
-        <td><%= image_tag picture.image %></td>
+        <td><%= link_to (image_tag picture.image), picture %></td>
         <td><%= picture.description %></td>
         <td><%= link_to 'Show', picture %></td>
         <td><%= link_to 'Edit', edit_picture_path(picture) %></td>
