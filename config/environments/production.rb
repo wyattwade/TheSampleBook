@@ -97,18 +97,12 @@ config.action_mailer.default_url_options = { :host => 'letsdothiss.herokuapp.com
 
 
 
-
-
 RAILS_ENV=production bundle exec rake assets:precompile
-
 
 config.cache_classes = true
 config.serve_static_assets = true
 config.assets.compile = true
 config.assets.digest = true
-
-
-
 
 
 
