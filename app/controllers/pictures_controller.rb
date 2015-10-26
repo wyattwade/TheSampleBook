@@ -1,6 +1,7 @@
 class PicturesController < ApplicationController
+  before_action :authenticate_user!, except: [:index, :show]
   before_action :find_picture, only: [:show, :edit, :update, :destroy,]
-	before_action :authenticate_user!, except: [:index, :show]
+  before_action :correct_user, only: [:edit, :update, :destroy]
 
 	def index
 		@pictures = Picture.all.order("created_at DESC")
@@ -50,5 +51,23 @@ class PicturesController < ApplicationController
 		@picture = Picture.find(params[:id])
 	end
 
+
+
+
+
+
+
+
+
+
+
+   # Confirms the correct user.
+   
+   	def correct_user
+  		user = Picture.find(params[:id]).user if params[:id]
+  		redirect_to picture_path, notice: "You're not authorized to edit this pin" unless current_user == user
+	end
+    
+	
 end
 

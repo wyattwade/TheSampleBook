@@ -22,7 +22,11 @@
 @import "bootstrap";
 
 body {
-	background: #E9E9E9;
+	background:  url('snow-forest.jpg') ;
+	background-size:   cover;                    
+    background-repeat: no-repeat;
+    background-position: center center; 
+	background-attachment: fixed;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -41,6 +45,19 @@ nav {
 		}
 	}
 }
+
+
+
+.navbar {
+   background-color: transparent;
+   background: transparent;
+   border-color: transparent;
+}
+
+.navbar li { color: #000 } 
+
+
+
 
 #pictures {
   margin: 0 auto;
