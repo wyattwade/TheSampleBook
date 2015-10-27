@@ -34,26 +34,30 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 nav {
-	box-shadow: none;
+	box-shadow: black;
 	.navbar-brand {
 		a {
-			color: #CCFFCC;
+			color: #E0FFFE;
 			font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
 			
-			&:hover {
-				text-decoration: none;
-			}
+			
 		}
 	}
 }
 
 
+.nav.navbar-nav.navbar-right li a {
+    color: #E0FFFE;
+    font-family: 'Avant Garde', Avantgarde, 'Century Gothic', CenturyGothic, AppleGothic, sans-serif;
+}
 
-.navbar {
-   background-color: #000000;
-   background: #000000;
-   border-color: #000000;
-   .container{ height: 5px; 
+
+.navbar-default
+{
+   background-color: #14211a;
+   background: #14211a;
+   border-color: #14211a;
+   .container{ height: 50px; 
    	
    }
 }
@@ -93,6 +97,14 @@ nav {
 	  }
 	}
 }
+
+
+
+
+
+
+
+
 
 #edit_page {
 	.current_image {
