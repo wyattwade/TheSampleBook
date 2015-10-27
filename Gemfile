@@ -22,13 +22,14 @@ gem 'jbuilder', '~> 2.0'
 # bundle exec rake doc:rails generates the API under doc/api.
 gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'masonry-rails', '~> 0.2.4'
+
 gem 'paperclip', "~> 4.2"
 gem 'aws-sdk', '~>1.6'
 
 gem 'devise'
 gem 'haml'
 gem 'bootstrap-sass', '~> 3.3.5.1'
-
+gem 'rails_serve_static_assets'
 
 
 
