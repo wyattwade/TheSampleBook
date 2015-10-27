@@ -42,6 +42,14 @@ Rails.application.configure do
 
 
 
+
+#this unfroze my asset pipeline
+config.serve_static_assets = false
+
+
+
+
+
 #devise
 config.action_mailer.default_url_options = { host: 'localhost', port: 3000 }
 
