@@ -23,11 +23,7 @@
 @import "bootstrap";
 
 body {
-	background:  url('snow-forest.jpg') ;
-	background-size:   cover;                    
-    background-repeat: no-repeat;
-    background-position: center center; 
-	background-attachment: fixed;
+	background: #E9E9E9;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -38,7 +34,7 @@ nav {
 	box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.22);
 	.navbar-brand {
 		a {
-			color: #BD1E23;
+			color: #BD1E24;
 			font-weight: bold;
 			&:hover {
 				text-decoration: none;
@@ -47,20 +43,7 @@ nav {
 	}
 }
 
-
-
-.navbar {
-   background-color: transparent;
-   background: transparent;
-   border-color: transparent;
-}
-
-.navbar li { color: #000 } 
-
-
-
-
-#pictures {
+#pins {
   margin: 0 auto;
   width: 100%;
   .box {
@@ -99,11 +82,11 @@ nav {
 	}
 }
 
-#picture_show {
+#pin_show {
 	.panel-heading {
 		padding: 0;
 	}
-	.picture_image {
+	.pin_image {
 		img {
 			max-width: 100%;
 			width: 100%;
