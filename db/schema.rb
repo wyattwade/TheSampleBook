@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20151021060526) do
+ActiveRecord::Schema.define(version: 20151028220238) do
 
   create_table "pictures", force: :cascade do |t|
     t.string   "image_file_name"
@@ -22,6 +22,10 @@ ActiveRecord::Schema.define(version: 20151021060526) do
     t.datetime "created_at",         null: false
     t.datetime "updated_at",         null: false
     t.integer  "user_id"
+    t.string   "mp3_file_name"
+    t.string   "mp3_content_type"
+    t.integer  "mp3_file_size"
+    t.datetime "mp3_updated_at"
   end
 
   add_index "pictures", ["user_id"], name: "index_pictures_on_user_id"
