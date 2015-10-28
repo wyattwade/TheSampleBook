@@ -44,7 +44,7 @@ class PicturesController < ApplicationController
 	private
 
 	def picture_params
-		params.require(:picture).permit(:description, :image, :mp3, :mp3_file_name)
+		params.require(:picture).permit(:description, :image, :mp3)
 	end
 
 	def find_picture
