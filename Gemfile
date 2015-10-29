@@ -29,7 +29,7 @@ gem 'aws-sdk', '~>1.6'
 gem 'devise'
 gem 'haml'
 gem 'bootstrap-sass', '~> 3.3.5.1'
-
+gem 'jquery-turbolinks'
 
 
 
