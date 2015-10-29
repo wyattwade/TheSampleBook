@@ -5,34 +5,27 @@
       <div class=" panel-heading picture_image" >
             				
             				
+            			
+            			
             			<div class= " panel-heading picture_image" >	
             				<%= image_tag @picture.image.url %>
             			</div>
             				
+            			
+            			
+            			
             			<div class= " panel-body" >	
             				<%= @picture.description %>
             			</div>
             			
+            			
+            			
+            			
             			<div class= " panel-footer" >			
             			   <div class= "row" >
-            			       <div class= "col-md-6">
-            			         <p class= "user">
-            			     
-                      							Submitted by
-                      							<%= @picture.user.email %>
-                            </p>
-                          </div>			 
-                      		
-                      	  <div class= "col-md-6">		
-                      	    <div class= "btn-group pull-right">
-                      							<% if user_signed_in? %>
-                      								<%= link_to "Edit", edit_picture_path, class: "btn btn-default" %>
-                      								<%= link_to "Delete", picture_path, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default" %>  
-                      							<% end %>
-                      			</div>
-                      		</div>				
-                      	
-                                      			<div id="jquery_jplayer_1" class="jp-jplayer"></div>
+            			
+            			
+            			           			<div id="jquery_jplayer_1" class="jp-jplayer"></div>
                                             <div id="jp_container_1" class="jp-audio">
                                               <div class="jp-type-single">
                                                 <div class="jp-gui jp-interface">
@@ -81,6 +74,26 @@
                       	});
                       </script>
   
+            			
+            			
+            			       <div class= "col-md-6">
+            			         <p class= "user">
+            			     
+                      							Submitted by
+                      							<%= @picture.user.email %>
+                            </p>
+                          </div>			 
+                      		
+                      	  <div class= "col-md-6">		
+                      	    <div class= "btn-group pull-right">
+                      							<% if user_signed_in? %>
+                      								<%= link_to "Edit", edit_picture_path, class: "btn btn-default" %>
+                      								<%= link_to "Delete", picture_path, method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-default" %>  
+                      							<% end %>
+                      			</div>
+                      		</div>				
+                      	
+                           
   
   
   
