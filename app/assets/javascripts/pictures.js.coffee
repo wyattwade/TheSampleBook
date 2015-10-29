@@ -8,4 +8,3 @@ $ ->
     $('#pictures').masonry
       itemSelector: '.box'
       isFitWidth: true          
-      
