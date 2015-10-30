@@ -43,8 +43,41 @@ Rails.application.configure do
 
 
 
-#this unfroze my asset pipeline
-config.serve_static_assets = false
+
+
+
+
+
+
+
+
+
+
+
+
+#this unfroze my asset pipeline when I set it to false. But then after a while, pictures uploaded would not show up in development - so I set it to true. Now pictures show up and the pipeling is unfrozen. And for production?
+config.serve_static_assets = true
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
